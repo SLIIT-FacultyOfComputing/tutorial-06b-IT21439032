@@ -1,7 +1,38 @@
 #include "Box.h"
 
 // Implement setters and getters
+// Implemenet the calcVolume() function
+void Box::setLength(int l)
+{
+  length = l;
+}
+      
+void Box::setWidth(int w)
+{
+  width = w;
+}
 
-// Implemenet the calcVolume() unction
-int Box::calcVolume() {
+void Box::setHeight(int h)
+{
+  height = h;
+}
+       
+int Box::getLength()
+{
+  return length;
+}
+
+int Box::getWidth()
+{
+  return width;
+}
+       
+int Box::getHeight()
+{
+  return height;
+}
+
+int Box::calcVolume() 
+{
+  return length * width * height;
 }
